@@ -1,0 +1,89 @@
+\documentclass[aps,prl,preprint,groupedaddress]{revtex4}
+%\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-1}
+%\documentclass[aps,prl,reprint,groupedaddress]{revtex4-1}
+\usepackage{graphicx}
+
+\begin{document}
+
+% Use the \preprint command to place your local institutional report
+% number in the upper righthand corner of the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+% Use the 'preprintnumbers' class option to override journal defaults
+% to display numbers if necessary
+%\preprint{}
+
+%Title of paper
+\title{Measurement of the three-jet and four-jet invariant mass distribution with the ATLAS detector at the LHC}
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro for each each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+\author{John Coody}
+\email[]{jmc112@latech.edu}
+\affiliation{Louisiana Tech University}
+\author{My Advisor (Dr. Wobisch)}
+\email[]{wobisch@latech.edu}
+\affiliation{Louisiana Tech University}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+
+%Collaboration name if desired (requires use of superscriptaddress
+%option in \documentclass). \noaffiliation is required (may also be
+%used with the \author command).
+%\collaboration can be followed by \email, \homepage, \thanks as well.
+%\collaboration{TheGreatCollaboration}
+%\noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+We will present the measurement of three-jet and four-jet differential cross-section as a function of invariant mass of three and four jets respectively in a pp collision event at $\sqrt(s)=8$ TeV using data collected by the ATLAS experiment at the Large Hadron Collider.  The cross sections will be measured using anti-kt jet algorithm with distance parameter of $R=0.6$. These measurements will be based on the 2012 data sample, consisting of a total integrated luminosity of ~20 fb−1. The differential cross sections will be presented in bins of jet rapidity with |y|<4.9, and jet transverse momenta from 100 GeV to 2 TeV. Measurements will be corrected for the experimental effects to the particle level.  The unfolded data will be compared to expectations based on next-to leading order QCD calculations corrected for non-perturbative effects, as well as to next-to-leading order Monte Carlo predictions. This analysis could be used to test the theory of PQCD for its predictions and also to validate Renormalization group equations at highest momentum transfer available at LHC.
+\end{abstract}
+
+\section{Introduction \label {intro}}
+  In previous years, data from experiments on dijet productions at various particle colliders has been well-analyzed. These colliders have operated at around 7 TeV, 8 TeV or lower \cite{Aad:2011tqa}, but plans for operational energies of 13 TeV to 14 TeV are currently underway. The experiments of interest involve proton-proton collisions at high energy. At these levels, they essentially become parton-parton collisions, involving quarks or gluons in strong interaction. Observing and describing these strong interactions is the subject of our experiments and analysis according to quantum chromo dynamics (QCD). There are three possible fundamental events involving the quark, anti-quark, and gluon: assuming forward-moving time, a quark can break into another quark and gluon, a gluon can break into a quark and anti-quark, or a quark and anti-quark collide to release a gluon. Events involving only gluons are also possible, so long as color-charge is preserved. Interactions described by QCD are analogous to those in QED (quantum electro dynamics), the primary difference being that the latter involves leptons which are electrically charged, or the neutral photon. However, the basic interactions in QCD can be combined into Feynman diagrams which may be used in calculating cross-sections. The cross-section is defined as the rate of interactions, or number of events divided by integrated luminosity. Because dijet productions have been well-described by current theory, we will study three and four jet events at leading order (LO) and next-to-leading order (NLO). This is also the first time that we may precisely be able to test high-multiplicity final states \cite{Abazov:2011ub}.
+
+    \begin{figure*}
+        \begin{centering}
+        \includegraphics{figure1.eps}
+        \caption[D0 Experiment.]{ Differential cross-section from D0 experiment (a) in different rapidity regions (b) for different pT3 requirements}
+        \label{fig:D0}
+        \end{centering}
+    \end{figure*}
+
+
+%\section{Methods \label {meth}}
+
+%\section{Conclusion \label {conc}}
+
+\begin{thebibliography}{99}
+%\cite{Aad:2011tqa}
+\bibitem{Aad:2011tqa}
+  G.~Aad {\it et al.}  [ATLAS Collaboration],
+  %``Measurement of multi-jet cross sections in proton-proton collisions at a 7 TeV center-of-mass energy,''
+  Eur.\ Phys.\ J.\ C {\bf 71}, 1763 (2011)
+  [arXiv:1107.2092 [hep-ex]].
+  %%CITATION = ARXIV:1107.2092;%%
+  %45 citations counted in INSPIRE as of 14 Nov 2013
+
+%\cite{Abazov:2011ub}
+\bibitem{Abazov:2011ub}
+  V.~M.~Abazov {\it et al.}  [D0 Collaboration],
+  %``Measurement of three-jet differential cross sections $d\sigma_{\textnormal{3jet}} / dM_{\textnormal{3jet}}$ in $p\bar{p}$ collisions at $\sqrt{s}=1.96$ TeV,''
+  Phys.\ Lett.\ B {\bf 704}, 434 (2011)
+  [arXiv:1104.1986 [hep-ex]].
+  %%CITATION = ARXIV:1104.1986;%%
+  %16 citations counted in INSPIRE as of 14 Nov 2013
+  %16 citations counted in INSPIRE as of 14 Nov 2013
+
+\end{thebibliography}
+
+\end{document}

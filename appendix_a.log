@@ -1,0 +1,11 @@
+This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=latex 2009.10.8)  28 OCT 2011 07:59
+entering extended mode
+**appendix_a.tex
+(appendix_a.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2008-06-18, ngerman-x-2008-06-18, french, loaded.
+! Undefined control sequence.
+l.2 \chapter
+            {APPENDICES (IF DESIRED)}\label{append1}
+? 

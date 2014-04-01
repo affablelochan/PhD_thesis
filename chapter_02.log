@@ -1,0 +1,11 @@
+This is pdfTeX, Version 3.1415926-1.40.9 (MiKTeX 2.7) (preloaded format=latex 2009.10.8)  19 AUG 2011 14:17
+entering extended mode
+**chapter_02.tex
+(chapter_02.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, german-x-2008-06-18, ngerman-x-2008-06-18, french, loaded.
+! Undefined control sequence.
+l.1 \chapter
+            {TYPESETTING IN \LaTeX }\label{chap2:latex}
+? 

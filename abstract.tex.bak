@@ -1,0 +1,19 @@
+\chapter*{ABSTRACT}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+
+{\bf Put your abstract here.}
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+
+If the abstract splits over two pages, \LaTeX \ will
+take care of the page numbering.
+
+

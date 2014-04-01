@@ -1,0 +1,191 @@
+% thesis_front.tex
+% this contains: title, abstract, acknowledgements, dedication,
+% contents, list of figures and list of tables
+\pagenumbering{roman}
+
+% title page
+\thispagestyle{empty}
+\begin{center}\begin{singlespace}%
+\ \\ %1
+\ \\ %2
+\ \\ %3
+\ \\ %4
+\end{singlespace}
+{ \normalsize \textbf{
+DISSERTATION TITLE IN CAPITAL LETTERS, SPLIT FOR \\  %Comment out this line and the next if title has 1 line
+INVERTED PYRAMID FORM; $<3$ LINES: INSERT TWO \\      %Comment out this line if title splits across 2 lines
+``$\setminus \ \setminus \setminus $" BEFORE ``A Diss..." PER LINE
+}} \\
+%Serious suggestion: If the title needs more than 3 lines, think about
+%shortening it. A title is not an abstract.
+by\\
+Your Name, B.S. , M.S., M.Ed., other (pick which is applicable)
+\vfill
+\begin{singlespace}%
+\ \\
+\ \\
+\ \\
+%\ \\    %Uncomment these two lines if title has only 2 lines
+%\ \\    %Uncomment these two lines if title has only 2 lines
+%\ \\    %Uncomment all 4 lines if title has only 1 line
+%\ \\    %Uncomment all 4 lines if title has only 1 line
+A Dissertation Presented in Partial Fulfillment \\
+of the Requirements for the Degree \\
+Doctor of Philosophy/Master of Science (pick which) \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+\ \\
+COLLEGE OF ENGINEERING AND SCIENCE\\
+LOUISIANA TECH UNIVERSITY\\
+\vfill
+
+Month Year (of award)
+\end{singlespace}
+\end{center}
+\newpage
+
+%\vfill
+%\end{center}
+
+%\clearpage
+
+% abstract
+\thispagestyle{empty}
+%\renewcommand{\baselinestretch}{2.0}
+%\begin{center}
+\chapter*{ABSTRACT}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+
+{\bf Put your abstract here.}
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+The quick brown fox jumped over the lazy dog.
+(I'm so tired of animal acts.)
+
+If the abstract splits over two pages, \LaTeX \ will
+take care of the page numbering.
+
+
+
+\vfill\vfill
+\newpage
+\thispagestyle{empty}
+Replace this page with the approval for
+scholarly dissemination form.
+
+\newpage
+
+\chapter*{DEDICATION}\addcontentsline{toc}{chapter}{DEDICATION}
+Place dedication here, if a dedication is desired. Otherwise comment out this
+block of code from $\setminus $chapter... to $\setminus $newpage.
+\newpage
+
+% table of contents
+%
+\begin{singlespace}
+% This configures the space before the title
+\renewcommand{\cftbeforetoctitleskip}{.6in}%{\SpaceBeforeChapter}
+% this configures the space after the title
+\renewcommand{\cftaftertoctitleskip}{1em}%{3em}
+% This makes the title LIST OF TABLES, centered in Large bfseries
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
+\renewcommand{\cfttoctitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+% This changes the chapter font to the same as a section (no bold)
+\renewcommand{\cftchapfont}{\cftsecfont}
+% this add dots
+\renewcommand{\cftchapdotsep}{\cftsecdotsep}
+% This unnbolds the dots and page numbers
+\renewcommand{\cftchapleader}{\normalfont\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftchappagefont}{\normalfont}
+\setlength{\cftparskip}{1.0\baselineskip}%
+\tableofcontents
+\end{singlespace}
+
+\newpage
+
+% lists of figures and tables
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+\begin{singlespace}
+
+%%%\singlespacing
+% This configures the space before the title
+\renewcommand{\cftbeforelottitleskip}{.6in}%{\SpaceBeforeChapter}
+% this configures the space after the title
+\renewcommand{\cftafterlottitleskip}{1em}
+% This makes the title LIST OF TABLES, centered in bfseries
+\renewcommand{\listtablename}{LIST OF TABLES}
+\renewcommand{\cftlottitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+
+\setlength{\cftparskip}{1.0\baselineskip}%{1.6667\baselineskip}
+\renewcommand{\cfttabpresnum}{Table~}
+% This will correct the indent so the above added text doesn't distort it
+
+\newlength{\mylenTable}
+\settowidth{\mylenTable}{\cfttabpresnum\cfttabaftersnum}
+%\addtolength{\cftfignumwidth}{\mylenFigure}
+\hyphenpenalty=100000
+
+%% This makes it double space between entries, but single space is turned on already, so it will single space wrapped entries
+%\setlength{\cftparskip}{1.0\baselineskip}%{1.6667\baselineskip}
+\listoftables
+\end{singlespace}
+
+\newpage
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+% This causes single spacing for entries that wrap
+\begin{singlespace}
+% This configures the space before the title
+\renewcommand{\cftbeforeloftitleskip}{.6in}%{\SpaceBeforeChapter}
+% this configures the space after the title
+\renewcommand{\cftafterloftitleskip}{1em}
+% This makes the title LIST OF FIGURES, centered in Large bfseries
+\renewcommand{\listfigurename}{LIST OF FIGURES}
+\renewcommand{\cftloftitlefont}{\hfill\large\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+% This cause double spacing between entries, single spacing with line wraps
+\setlength{\cftparskip}{1.0\baselineskip}%{1.6667\baselineskip}
+\renewcommand{\cftfigpresnum}{Figure~}
+% This will correct the indent so the above added text doesn't distort it
+\newlength{\mylenFigure}
+\settowidth{\mylenFigure}{\cftfigpresnum\cftfigaftersnum}
+%\addtolength{\cftfignumwidth}{\mylenFigure}
+\hyphenpenalty=100000
+\listoffigures
+% Turn double spacing back on
+\end{singlespace}
+\hyphenpenalty=1000
+%\doublespacing
+%\renewcommand{\baselinestretch}{2.0}
+\newpage
+
+
+
+
+\newpage
+\chapter*{ACKNOWLEDGMENTS}\addcontentsline{toc}{chapter}{ACKNOWLEDGMENTS}
+
+Place acknowledgements here, if acknowledgements are desired.
+For example ...
+
+I (B. Schr\"oder) thank Dr. Lisa Kuhn for letting me use her
+dissertation's source code as the basis for this template.
+The hard work was done by her. I only inserted stuff about
+foxes, dogs and placement of figures.
+
+Otherwise, comment out the code from
+$\setminus $newpage up to and including this line.
+
+
+
