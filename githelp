@@ -2,3 +2,15 @@ git init
 git add filename
 git commit -m "Adding files"
 git push https://github.com/affablelochan/PhD_thesis
+
+
+
+for the first time
+
+git config --global user.name "affablelochan"
+git config --global user.email "affablelochan@gmail.com"
+
+
+
+http://classic.scottr.org/presentations/git-in-5-minutes/
+
