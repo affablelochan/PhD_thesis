@@ -1,0 +1,4 @@
+git init
+git add filename
+git commit -m "Adding files"
+git push https://github.com/affablelochan/PhD_thesis
