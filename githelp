@@ -3,6 +3,9 @@ git add filename
 git commit -m "Adding files"
 git push https://github.com/affablelochan/PhD_thesis
 
+to download the contents of git folder:
+
+git clone https://github.com/affablelochan/PhD_thesis.git
 
 
 for the first time
