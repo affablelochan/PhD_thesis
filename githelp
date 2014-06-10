@@ -3,10 +3,13 @@ git add filename
 git commit -m "Adding files"
 git push https://github.com/affablelochan/PhD_thesis
 
+
 to download the contents of git folder:
 
 git clone https://github.com/affablelochan/PhD_thesis.git
 
+If you think the code changed by other user while you are making changes to code use pull command. 
+git pull origin
 
 for the first time
 
