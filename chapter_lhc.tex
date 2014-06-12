@@ -2,13 +2,15 @@
 
 [Thesis 2011-258]
 
+\section{Overview}
 This chapter  takes a closer look at the Large Hadron Collider located at CERN,
 the European Organization for Nuclear Research, and at one of the detectors placed
 along its ring: ATLAS, A Toroidal Lhc ApparatuS (described in detail in Refer-
 ence [ATLAS Collaboration 2008a]).
 
 
-The Large Hadron Collider (LHC) \cite{lhc1}, \cite{lhc2} is a proton-proton collider in Geneva,
+
+The Large Hadron Collider (LHC) \cite{lhc1},\cite{lhc2},\cite{lhc3},\cite{lhc4} is a proton-proton collider in Geneva,
 Switzerland that collides two beams of protons together at very high energies. The ATLAS
 detector, which is designed to measure the output of these collisions, is located at one of
 four collision points on the LHC accelerator ring. During 2012, the third year of operation,
@@ -68,10 +70,78 @@ Figure
 
 
 \subsection{Luminosity}
+Besides the beam energy, the luminosity is the other characteristic that determines the
+operating conditions of the LHC. The luminosity L reflects the density and rate of proton
+bunches that are collided. The number of collisions per unit time, N, for a process with
+a cross section $\sigma$, is determined as
+
+\begin{equation} \label{eq:lumi1}
+                N = L \times \sigma 
+             \end{equation}
+The luminosity is determined from the beam parameters of the accelerator:
+
+\begin{equation} \label{eq:lumi2}
+          L = \frac{N_{b}^{2} F\gamma}{4 \pi \beta^{*} \epsilon_{n}} n_{b} f_{rev}
+             \end{equation}
+
+
+where $N_{b}$ is the number of protons per bunch. The correction factor F arises due to
+the LHC crossing angle at the interaction point, which reduces the luminous region and
+prevents ``parasitic collisions'' between unintended bunches. The value of the beam envelope
+function  evaluated at the interaction point,$\beta^{*}$, characterizes the beam size and
+focusing distance at the collision point. The normalized transverse beam emittance, $\epsilon_{n}$,
+characterizes the phase and momentum space occupied by the beam, and  is the relativistic
+factor of the protons. Finally $n_{b}$ is the number of bunches and $f_{rev}$ = c/26.7 km
+= 11.2 kHz is the LHC revolution frequency, where c is the speed of light.
+
+
+Total Integrated Luminosity and Data Quality in 2012
+The figure \ref{intlumi} shows cumulative luminosity versus time delivered to (green), recorded by ATLAS (yellow), and certified to be good quality data (blue) during stable beams and for pp collisions at 8 TeV centre-of-mass energy in 2012. The delivered luminosity accounts for the luminosity delivered from the start of stable beams until the LHC requests ATLAS to put the detector in a safe standby mode to allow a beam dump or beam studies. The recorded luminosity reflects the DAQ inefficiency, as well as the inefficiency of the so‐ called "warm start": when the stable beam flag is raised, the tracking detectors undergo a ramp of the high-voltage and, for the pixel system, turning on the preamplifiers. The data quality assessment shown corresponds to the All Good efficiency shown in the 2012 DQ table. The luminosity shown represents the preliminary 8 TeV luminosity calibration. Data quality has been assessed after reprocessing. 
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figs/lumi}
+\caption{
+ATLAS experiment integrated luminosity for the year 2012 \cite{lumi}
+}
+\label{intlumi}
+\end{center}
+\end{figure}
+
+
+
 
 \section{The ATLAS detector}
 \subsection{Overview}
-%\subsection{ATLAS Coordinate system}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figs/detector}
+\caption{
+ATLAS detector\cite{detector}
+}
+\label{intlumi}
+\end{center}
+\end{figure}
+
+
+\subsection{ATLAS Coordinate system}
+The ATLAS reference system is a Cartesian right-handed coordinate system, with the
+nominal collision point at the origin. The counter-clockwise beam direction defines the
+positive z axis, with the x axis pointing to the center of the LHC ring. The pseudorapidity
+is defined as  $\eta = -ln(tan (\theta/2))$, where the polar angle, $ \theta $ , is taken with respect to the
+positive z direction. The rapidity is defined as
+
+\begin{equation} \label{eq:rapidity}
+         % L = \frac{N_{b}^{2} F\gamma}{4 \pi \beta^{*} \epsilon_{n}} n_{b} f_{rev}
+        y = \frac{1}{2} ln \frac{E+p_{z}}{E-p_{z}}
+             \end{equation}
+
+ where E denotes the energy and $p_{z}$ is the component of the momentum along the beam direction. In the limit of massless particles, $\eta$ = y. Since the interacting partons carry an unknown fraction of
+the momenta of the colliding protons, the physical observables measured in this thesis are ratio of jet cross sections that are invariant under Lorentz boosts along the z axis.
+
+
 \subsection{Inner Detector}
 \subsection{Calorimeter}
 \subsection{Muon Spectrometer}
